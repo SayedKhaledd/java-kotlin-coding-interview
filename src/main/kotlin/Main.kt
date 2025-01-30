@@ -5,7 +5,7 @@ import com.example.exceptions.NoWinnerException
 import com.example.model.Player
 
 fun main() {
-    val playerA = Player("Player A", Action.ROCK, 0)
+    val playerA = Player("Player A", Action.getRandomAction(), 0)
     val playerB = Player("Player B", Action.ROCK, 0)
     startGame(playerA, playerB, 100)
     try {
